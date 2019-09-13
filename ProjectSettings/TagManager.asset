@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - QuestionGenerator
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Static Background
+  - Background
+  - Player
+  - Foreground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Static Background
+    uniqueID: 4029520285
+    locked: 0
+  - name: Background
+    uniqueID: 1300581943
+    locked: 0
+  - name: Player
+    uniqueID: 631837083
+    locked: 0
+  - name: Foreground
+    uniqueID: 2844340211
+    locked: 0
+  - name: Textboxes
+    uniqueID: 1526072509
+    locked: 0
