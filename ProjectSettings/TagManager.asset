@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - QuestionGenerator
+  - PickupItem
   layers:
   - Default
   - TransparentFX

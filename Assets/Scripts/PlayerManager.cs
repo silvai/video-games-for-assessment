@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour {
 
+    float x, y;
 	#region Singleton
 
 	public static PlayerManager instance;
@@ -24,5 +25,12 @@ public class PlayerManager : MonoBehaviour {
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
+
+    public void recordPlayerPosition()
+    {
+        Debug.Log(transform.position);
+        x = transform.position.x;
+        y = transform.position.y;
+    }
 
 }

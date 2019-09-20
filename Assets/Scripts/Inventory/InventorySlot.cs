@@ -13,20 +13,20 @@ public class InventorySlot : MonoBehaviour {
 	// Add item to the slot
 	public void AddItem (Item newItem)
 	{
+        Debug.Log("Adding item");
 		item = newItem;
 		icon.sprite = item.icon;
 		icon.enabled = true;
-		removeButton.interactable = true;
+		//removeButton.interactable = true;
 	}
 
 	// Clear the slot
 	public void ClearSlot ()
 	{
 		item = null;
-
 		icon.sprite = null;
 		icon.enabled = false;
-		removeButton.interactable = false;
+		//removeButton.interactable = false;
 	}
 
 	// Called when the item is pressed

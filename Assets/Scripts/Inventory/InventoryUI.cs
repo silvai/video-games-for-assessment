@@ -11,7 +11,8 @@ public class InventoryUI : MonoBehaviour {
 
 	InventorySlot[] slots;	        // List of all the slots
 
-	void Start () {
+	void Start ()
+    {
 		inventory = Inventory.instance;
 		inventory.onItemChangedCallback += UpdateUI;	// Subscribe to the onItemChanged callback
 
@@ -19,7 +20,8 @@ public class InventoryUI : MonoBehaviour {
 		slots = itemsParent.GetComponentsInChildren<InventorySlot>();
 	}
 	
-	void Update () {
+	void Update ()
+    {
 
         inventoryUI.SetActive(true);
 
@@ -31,13 +33,15 @@ public class InventoryUI : MonoBehaviour {
     // This is called using a delegate on the Inventory.
     void UpdateUI ()
 	{
+        Debug.Log("Updating UI");
 		// Loop through all the slots
 		for (int i = 0; i < slots.Length; i++)
 		{
 			if (i < inventory.items.Count)	// If there is an item to add
 			{
 				slots[i].AddItem(inventory.items[i]);	// Add it
-			} else
+			}
+            else
 			{
 				// Otherwise clear the slot
 				slots[i].ClearSlot();

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour {
+public class Inventory : MonoBehaviour
+{
 
 	#region Singleton
 
@@ -25,6 +26,7 @@ public class Inventory : MonoBehaviour {
 	// Callback which is triggered when
 	// an item gets added/removed.
 	public delegate void OnItemChanged();
+
 	public OnItemChanged onItemChangedCallback;
 
 	public int space = 10;	// Amount of slots in inventory
@@ -48,19 +50,23 @@ public class Inventory : MonoBehaviour {
 
 		// Trigger callback
 		if (onItemChangedCallback != null)
-			onItemChangedCallback.Invoke();
+        {
+            onItemChangedCallback.Invoke();
+        }
 
+        Debug.Log("Items list now is " + items);
 		return true;
 	}
 
-	// Remove an item
-	public void Remove (Item item)
-	{
-		items.Remove(item);		// Remove item from list
+    // Remove an item
+    public void Remove(Item item)
+    {
+        items.Remove(item);     // Remove item from list
 
-		// Trigger callback
-		if (onItemChangedCallback != null)
-			onItemChangedCallback.Invoke();
-	}
-
+        // Trigger callback
+        if (onItemChangedCallback != null)
+        {
+            onItemChangedCallback.Invoke();
+        }
+    }
 }

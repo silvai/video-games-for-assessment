@@ -2046,8 +2046,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c626f33ed8e4487aa2b18bb2e504ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToKeep:
-  - {fileID: 893463413}
 --- !u!1 &893585258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: YellowHouse
+  globalScript: {fileID: 0}
 --- !u!61 &956942548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2717,6 +2716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: Home
+  globalScript: {fileID: 0}
 --- !u!61 &1281965600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2838,6 +2838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: BlueHouse
+  globalScript: {fileID: 0}
 --- !u!61 &1320476459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3260,6 +3261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: City
+  globalScript: {fileID: 0}
 --- !u!61 &1637004812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3716,6 +3718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: GreenHouse
+  globalScript: {fileID: 0}
 --- !u!61 &1844400578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3851,6 +3854,7 @@ GameObject:
   - component: {fileID: 1996191245}
   - component: {fileID: 1996191244}
   - component: {fileID: 1996191248}
+  - component: {fileID: 1996191243}
   m_Layer: 0
   m_Name: npc1
   m_TagString: Untagged
@@ -3858,6 +3862,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1996191243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996191242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6ba172d0d6c8f4295ef0ac5a30e694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
 --- !u!58 &1996191244
 CircleCollider2D:
   m_ObjectHideFlags: 0

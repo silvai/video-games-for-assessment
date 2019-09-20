@@ -20,7 +20,16 @@ public class ItemPickup : Interactable {
 
 		// If successfully picked up
 		if (wasPickedUp)
-			Destroy(gameObject);	// Destroy item from scene
+        {
+            Destroy(gameObject);	// Destroy item from scene
+        }
 	}
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Interact();
+        }
+    }
 }

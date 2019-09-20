@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour {
+public class Move : MonoBehaviour
+{
 
     public float stepSize;
     public float slide;
@@ -17,7 +18,8 @@ public class Move : MonoBehaviour {
     float y;
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
         x = Input.GetAxis("Horizontal") * Time.deltaTime * slide;
         transform.Translate(x, 0, 0);
         y = Input.GetAxis("Vertical") * Time.deltaTime * slide;
