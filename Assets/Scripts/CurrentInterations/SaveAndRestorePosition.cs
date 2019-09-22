@@ -22,11 +22,11 @@ public class SaveAndRestorePosition : MonoBehaviour
         if (indoors)
         {
             indoors = false;
-            playerPosition.y = playerPosition.y + 1;
+            playerPosition.y += 1;
         } else
         {
             indoors = true;
-            playerPosition.y = playerPosition.y - 1;
+            playerPosition.y -= 1;
         }
         
         
