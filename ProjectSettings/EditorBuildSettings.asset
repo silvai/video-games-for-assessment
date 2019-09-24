@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IceCream.unity
     guid: be8745fbf094fdc4bb518ab82e2cbefd
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 903dcc989008308438491459ec10402e
   m_configObjects: {}
