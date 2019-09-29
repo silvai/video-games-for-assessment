@@ -17,9 +17,16 @@ public class Move : MonoBehaviour
     float x;
     float y;
 
+    public bool canMove;
+
     // Update is called once per frame
     void Update ()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         x = Input.GetAxis("Horizontal") * Time.deltaTime * slide;
         transform.Translate(x, 0, 0);
         y = Input.GetAxis("Vertical") * Time.deltaTime * slide;
