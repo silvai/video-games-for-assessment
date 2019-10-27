@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Zone1/GreenHouse.unity
     guid: 4f6e7e9b126e143b2b782c479a2487d5
   - enabled: 1
-    path: Assets/Scenes/Zone2/YellowHouse.unity
+    path: Assets/Scenes/Zone1/YellowHouse.unity
     guid: 52b44834d7e564413bc7d1361d4221ea
   - enabled: 1
     path: Assets/Scenes/Zone1/BlueHouse.unity
