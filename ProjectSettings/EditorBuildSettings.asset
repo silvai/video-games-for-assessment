@@ -44,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene/EndScene.unity
     guid: 903dcc989008308438491459ec10402e
+  - enabled: 1
+    path: Assets/Scenes/Zone2/Arcade.unity
+    guid: 8f91cbab0d637fd4a8d23c0da74b27d9
+  - enabled: 1
+    path: Assets/Scenes/Zone2/CandyShop.unity
+    guid: e8370bf845fb15c4796c163a7ec4f312
+  - enabled: 1
+    path: Assets/Scenes/Zone2/FlowerShop.unity
+    guid: 2aa1f45bb4c9c7c4783c2a608001fd04
   m_configObjects: {}
