@@ -7,8 +7,10 @@ public class TextBoxManager : MonoBehaviour
 {
 
     public GameObject textBox;
+    public GameObject phoneBox;
 
     public Text theText;
+    public Text phoneText;
 
     public TextAsset textfile;
     public string[] textLines;
@@ -18,7 +20,7 @@ public class TextBoxManager : MonoBehaviour
 
     public GameObject player;
 
-
+    private bool phoneActive;
     public bool isActive;
 
     public bool stopPlayerMovement;
@@ -27,7 +29,8 @@ public class TextBoxManager : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("player");
-        
+        DisablePhoneBox();
+        phoneActive = false;
 
         if (textfile != null)
         {
@@ -51,15 +54,26 @@ public class TextBoxManager : MonoBehaviour
 
     void Update()
     {
-        if (!isActive)
+        if (!isActive || phoneActive)
         {
             return;
         }
 
-        theText.text = textLines[currentLine];
+        if (textLines[currentLine].ToCharArray()[0] == '*')
+        {
+            theText.text = textLines[currentLine].Substring(1);
+        } else
+        {
+            theText.text = textLines[currentLine];
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (textLines[currentLine].ToCharArray()[0] == '*')
+            {
+                EnablePhoneBox();
+            }
             currentLine++;
         }
 
@@ -89,6 +103,20 @@ public class TextBoxManager : MonoBehaviour
         player.GetComponent<Move>().canMove = true;
     }
 
+    public void EnablePhoneBox()
+    {
+        phoneBox.SetActive(true);
+        isActive = true;
+        phoneActive = true;
+    }
+
+    public void DisablePhoneBox()
+    {
+        phoneBox.SetActive(false);
+        isActive = false;
+        phoneActive = false;
+    }
+
     public void ReloadScript(TextAsset theText)
     {
         if(theText != null)
@@ -98,6 +126,16 @@ public class TextBoxManager : MonoBehaviour
             textLines = (theText.text.Split('\n'));
 
         }
+    }
+
+    public void LoadQuestion()
+    {
+
+    }
+
+    public void AcceptResponse()
+    {
+
     }
 }
 
