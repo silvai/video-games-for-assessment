@@ -1,2 +1,2 @@
-These are default words.
+*These are default words.
 More words.

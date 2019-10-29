@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\PlayerActions\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerActions\MoveCameraWithPlayer1.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\QuestionManager.cs" />
      <Compile Include="Assets\Scripts\Stats\CharacterStats.cs" />
      <Compile Include="Assets\Scripts\Stats\EnemyStats.cs" />
      <Compile Include="Assets\Scripts\Stats\PlayerStats.cs" />

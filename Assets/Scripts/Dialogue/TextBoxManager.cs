@@ -25,10 +25,14 @@ public class TextBoxManager : MonoBehaviour
 
     public bool stopPlayerMovement;
 
+    public QuestionManager questionManager;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("player");
+        questionManager = FindObjectOfType<QuestionManager>();
+
         DisablePhoneBox();
         phoneActive = false;
 
@@ -54,7 +58,7 @@ public class TextBoxManager : MonoBehaviour
 
     void Update()
     {
-        if (!isActive || phoneActive)
+        if (!isActive)
         {
             return;
         }
@@ -68,7 +72,7 @@ public class TextBoxManager : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !phoneActive)
         {
             if (textLines[currentLine].ToCharArray()[0] == '*')
             {
@@ -106,14 +110,13 @@ public class TextBoxManager : MonoBehaviour
     public void EnablePhoneBox()
     {
         phoneBox.SetActive(true);
-        isActive = true;
+        phoneText.text = LoadQuestion();
         phoneActive = true;
     }
 
     public void DisablePhoneBox()
     {
         phoneBox.SetActive(false);
-        isActive = false;
         phoneActive = false;
     }
 
@@ -128,14 +131,18 @@ public class TextBoxManager : MonoBehaviour
         }
     }
 
-    public void LoadQuestion()
+    public string LoadQuestion()
     {
-
+        string question = questionManager.getNextQuestion();
+        Debug.Log("LoadQuestion : " + question);
+        return question;
     }
 
-    public void AcceptResponse()
+    public void AcceptResponse(int choice)
     {
-
+        Debug.Log("ACCEPT RESPONSE" + choice);
+        questionManager.questionAnswered(choice);
+        DisablePhoneBox();
     }
 }
 
