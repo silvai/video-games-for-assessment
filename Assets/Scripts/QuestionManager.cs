@@ -60,4 +60,9 @@ public class QuestionManager : MonoBehaviour
         GlobalScoreScript.Instance.score = score;
         GlobalScoreScript.Instance.scoreText = scoreText;
     }
+
+    public int getScore()
+    {
+        return score;
+    }
 }
