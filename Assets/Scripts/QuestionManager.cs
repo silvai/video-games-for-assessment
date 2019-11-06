@@ -8,7 +8,7 @@ public class QuestionManager : MonoBehaviour
 
     public TextAsset questionList;
     public string[] questions;
-    public Text scoreText;
+    //public Text scoreText;
     public int score;
 
     private int questionsAnswered = 0;
@@ -28,8 +28,8 @@ public class QuestionManager : MonoBehaviour
             questions = (questionList.text.Split('\n'));
             Debug.Log("Number of questions: " + questions.Length);
         }
-        score = GlobalScoreScript.Instance.score;
-        setScoreText();
+        //score = GlobalScoreScript.Instance.score;
+        //setScoreText();
 
     }
 
@@ -52,17 +52,17 @@ public class QuestionManager : MonoBehaviour
 
     public void setScoreText()
     {
-        scoreText.text = "Score: " +  score.ToString() + " / 20";
+    //    scoreText.text = "Score: " +  score.ToString() + " / 20";
     }
 
     public void saveScore()
     {
-        GlobalScoreScript.Instance.score = score;
-        GlobalScoreScript.Instance.scoreText = scoreText;
+        //GlobalScoreScript.Instance.score = score;
+        //GlobalScoreScript.Instance.scoreText = scoreText;
     }
 
     public int getScore()
     {
-        return score;
+       return score;
     }
 }

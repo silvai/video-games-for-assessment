@@ -5624,6 +5624,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestionManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4532640628465704730, guid: 45a7ad0aaf3b1fa44aca6f0646a33960,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4532640628465704728, guid: 45a7ad0aaf3b1fa44aca6f0646a33960,
         type: 3}
       propertyPath: m_LocalPosition.x
