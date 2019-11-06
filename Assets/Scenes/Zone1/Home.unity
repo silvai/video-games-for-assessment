@@ -1248,9 +1248,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to our game! We hope that you enjoy exploring the world that we
-    have created for you and that you will interact with the in game characters as
-    honestly as possible.
+  m_Text: "Good morning! \r\nYou\u2019ve been sleeping for ages. It\u2019s almost
+    noon!\r\nWhy don\u2019t you run along and see if our neighbors need any help today.\r\nI
+    have a surprise for you if you get a chance to meet everyone.\r\nBe sure to say
+    hi to your sister and her friends before you leave!\r\n"
 --- !u!222 &452431447
 CanvasRenderer:
   m_ObjectHideFlags: 0
