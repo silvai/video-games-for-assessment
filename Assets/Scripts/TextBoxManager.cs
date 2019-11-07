@@ -83,6 +83,7 @@ public class TextBoxManager : MonoBehaviour
             {
                 EnablePhoneBox();
             }
+            Debug.Log("CHECK");
             currentLine++;
         }
 
@@ -125,12 +126,14 @@ public class TextBoxManager : MonoBehaviour
         phoneBox.SetActive(true);
         phoneText.text = LoadQuestion();
         phoneActive = true;
+        Debug.Log("Phone active");
     }
 
     public void DisablePhoneBox()
     {
         phoneBox.SetActive(false);
         phoneActive = false;
+        Debug.Log("Phone not active");
     }
 
     public void ReloadScript(TextAsset theText)

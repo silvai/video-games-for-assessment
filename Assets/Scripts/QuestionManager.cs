@@ -45,6 +45,7 @@ public class QuestionManager : MonoBehaviour
 
     public void questionAnswered(int choice)
     {
+        Debug.Log("QUESTION ANSWERED");
         questionsAnswered++;
         score++;
         setScoreText();
