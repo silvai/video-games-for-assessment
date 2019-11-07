@@ -8,7 +8,7 @@ public class QuestionManager : MonoBehaviour
 
     public TextAsset questionList;
     public string[] questions;
-    public Text scoreText;
+    //public Text scoreText;
     public int score;
     GlobalScoreManager scoreManager;
 
@@ -31,8 +31,13 @@ public class QuestionManager : MonoBehaviour
             questions = (questionList.text.Split('\n'));
             Debug.Log("Number of questions: " + questions.Length);
         }
+<<<<<<< HEAD
         score = scoreManager.score;
         setScoreText();
+=======
+        //score = GlobalScoreScript.Instance.score;
+        //setScoreText();
+>>>>>>> bb5dec70d5b2143dd34b76a759734404bc6ddcc3
 
     }
 
@@ -48,6 +53,7 @@ public class QuestionManager : MonoBehaviour
 
     public void questionAnswered(int choice)
     {
+        Debug.Log("QUESTION ANSWERED");
         questionsAnswered++;
         score++;
         setScoreText();
@@ -56,11 +62,21 @@ public class QuestionManager : MonoBehaviour
 
     public void setScoreText()
     {
-        scoreText.text = "Score: " +  score.ToString() + " / 20";
+    //    scoreText.text = "Score: " +  score.ToString() + " / 20";
     }
 
     public void saveScore()
     {
+<<<<<<< HEAD
         scoreManager.score = score;
+=======
+        //GlobalScoreScript.Instance.score = score;
+        //GlobalScoreScript.Instance.scoreText = scoreText;
+    }
+
+    public int getScore()
+    {
+       return score;
+>>>>>>> bb5dec70d5b2143dd34b76a759734404bc6ddcc3
     }
 }

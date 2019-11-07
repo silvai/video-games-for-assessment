@@ -18,17 +18,21 @@ public class GameGlobalScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void Awake () {
-            if(!i) {
-                i = this;
-                DontDestroyOnLoad(gameObject);
-            }else 
-                    Destroy(gameObject);
+    void Awake()
+    {
+        if (!i)
+        {
+            i = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
     }
-    public void UpdatePlayerPosition() {
+    public void UpdatePlayerPosition()
+    {
         var playerPos = playerObject.transform.position;
         Debug.Log(playerPos);
     }
