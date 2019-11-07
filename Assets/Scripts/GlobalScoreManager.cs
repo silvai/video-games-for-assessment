@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class GlobalScoreScript : MonoBehaviour
+public class GlobalScoreManager : MonoBehaviour
 {
-    public static GlobalScoreScript Instance;
-    public Text scoreText;
+    public static GlobalScoreManager Instance;
     public int score;
 
     private void Awake()

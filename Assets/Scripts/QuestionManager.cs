@@ -10,6 +10,7 @@ public class QuestionManager : MonoBehaviour
     public string[] questions;
     public Text scoreText;
     public int score;
+    GlobalScoreManager scoreManager;
 
     private int questionsAnswered = 0;
 
@@ -23,12 +24,14 @@ public class QuestionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreManager = GlobalScoreManager.Instance;
+
         if (questionList != null)
         {
             questions = (questionList.text.Split('\n'));
             Debug.Log("Number of questions: " + questions.Length);
         }
-        score = GlobalScoreScript.Instance.score;
+        score = scoreManager.score;
         setScoreText();
 
     }
@@ -48,6 +51,7 @@ public class QuestionManager : MonoBehaviour
         questionsAnswered++;
         score++;
         setScoreText();
+        //saveScore();
     }
 
     public void setScoreText()
@@ -57,7 +61,6 @@ public class QuestionManager : MonoBehaviour
 
     public void saveScore()
     {
-        GlobalScoreScript.Instance.score = score;
-        GlobalScoreScript.Instance.scoreText = scoreText;
+        scoreManager.score = score;
     }
 }
