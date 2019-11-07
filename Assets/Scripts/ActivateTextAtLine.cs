@@ -10,7 +10,7 @@ public class ActivateTextAtLine : MonoBehaviour
     public int startLine;
     public int endLine;
 
-    public GameManager globalObject;
+    public TextBoxManager theTextBox;
 
     public bool requireButtonPress;
     private bool waitForPress;
@@ -20,7 +20,7 @@ public class ActivateTextAtLine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        globalObject = FindObjectOfType<GameManager>();
+        theTextBox = FindObjectOfType<TextBoxManager>();
     }
 
     // Update is called once per frame
@@ -28,10 +28,10 @@ public class ActivateTextAtLine : MonoBehaviour
     {
         if (waitForPress && Input.GetKeyDown(KeyCode.Space))
         {
-            globalObject.ReloadScript(theText);
-            globalObject.currentLine = startLine;
-            globalObject.endAtLine = endLine;
-            globalObject.EnableTextBox();
+            theTextBox.ReloadScript(theText);
+            theTextBox.currentLine = startLine;
+            theTextBox.endAtLine = endLine;
+            theTextBox.EnableTextBox();
 
             if (destroyWhenActivated)
             {
@@ -50,10 +50,10 @@ public class ActivateTextAtLine : MonoBehaviour
                 return;
             }
 
-            globalObject.ReloadScript(theText);
-            globalObject.currentLine = startLine;
-            globalObject.endAtLine = endLine;
-            globalObject.EnableTextBox();
+            theTextBox.ReloadScript(theText);
+            theTextBox.currentLine = startLine;
+            theTextBox.endAtLine = endLine;
+            theTextBox.EnableTextBox();
 
             if (destroyWhenActivated)
             {

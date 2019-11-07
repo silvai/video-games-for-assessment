@@ -22,6 +22,5 @@ public class DoorTrigger : MonoBehaviour
     {
         pmScript.recordPlayerPosition();
         SceneManager.LoadScene(nextRoom, LoadSceneMode.Single);
-        
     }
 }

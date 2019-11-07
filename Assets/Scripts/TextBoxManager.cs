@@ -63,6 +63,11 @@ public class TextBoxManager : MonoBehaviour
             return;
         }
 
+        if (player == null)
+        {
+            player = GameObject.Find("player");
+        }
+
         if (textLines[currentLine].ToCharArray()[0] == '*')
         {
             theText.text = textLines[currentLine].Substring(1);
@@ -87,6 +92,10 @@ public class TextBoxManager : MonoBehaviour
         }
     }
 
+    public void FindPlayer()
+    {
+        player = GameObject.Find("player");
+    }
 
     public void EnableTextBox()
     {
@@ -95,6 +104,10 @@ public class TextBoxManager : MonoBehaviour
 
         if (stopPlayerMovement)
         {
+            if (player == null)
+            {
+                player = GameObject.Find("player");
+            }
             player.GetComponent<Move>().canMove = false;
         }
     }

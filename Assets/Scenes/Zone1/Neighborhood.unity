@@ -2116,8 +2116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf6313161788804f8c0d352cd678d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  qm: {fileID: 4532640627859058176}
-  player: {fileID: 421274398}
 --- !u!1001 &859765018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3608,7 +3606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1386035750
 Transform:
   m_ObjectHideFlags: 0
@@ -4846,7 +4844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1925817267
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5550,6 +5548,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 2666233523557210747, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233523557210747, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2666233523557210737, guid: 00dea925529cf704cb2f57862071d796,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5609,6 +5617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: canMove
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512116, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dea925529cf704cb2f57862071d796, type: 3}
@@ -5714,6 +5727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PhonePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4728567620668974271, guid: 23640385fa9aba84bb4d1f76371b8ed9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4728567620668974208, guid: 23640385fa9aba84bb4d1f76371b8ed9,
         type: 3}
