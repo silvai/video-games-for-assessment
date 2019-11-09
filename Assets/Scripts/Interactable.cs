@@ -8,16 +8,27 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour {
 
-	public float radius = 3f;				    // How close do we need to be to interact?
-	//public Transform interactionTransform;	// The transform from where we interact in case you want to offset it
-        
-	//bool isFocus;	        // Is this interactable currently being focused?
-	//Transform player;		// Reference to the player transform
+	public float radius = 3f;                   // How close do we need to be to interact?
+    //public Transform interactionTransform;	// The transform from where we interact in case you want to offset it
+    public bool needsItem;
+    public Item requiredItem;
 
-	bool hasInteracted;	// Have we already interacted with the object?
+    //bool isFocus;	        // Is this interactable currently being focused?
+    //Transform player;		// Reference to the player transform
+
+    bool hasInteracted;	// Have we already interacted with the object?
+    bool givenItem;
 
 	public virtual void Interact ()
 	{
+        if (needsItem && Inventory.instance.items.Contains(requiredItem))
+        {
+            Inventory.instance.Remove(requiredItem);
+            givenItem = true;
+        } else if (needsItem && !Inventory.instance.items.Contains(requiredItem))
+        {
+            Debug.Log("Missing required item " + requiredItem.name);
+        }
 		// This method is meant to be overwritten
 		Debug.Log("Interacting with " + transform.name);
 	}
