@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zone2/FlowerShop.unity
     guid: 2aa1f45bb4c9c7c4783c2a608001fd04
+  - enabled: 1
+    path: Assets/Scenes/Zone3/Park.unity
+    guid: 166472e5bc6365247a55ff5577d40a9c
   m_configObjects: {}
