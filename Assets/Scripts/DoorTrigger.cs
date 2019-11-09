@@ -10,6 +10,7 @@ public class DoorTrigger : MonoBehaviour
     PlayerManager pmScript;
     public string nextRoom;
     TriggerSpeech check;
+
     
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,7 @@ public class DoorTrigger : MonoBehaviour
     {
         pmScript.recordPlayerPosition();
         SceneManager.LoadScene(nextRoom, LoadSceneMode.Single);
+        AudioSource sound = gameObject.GetComponent<AudioSource>();
+        sound.Play();
     }
 }
