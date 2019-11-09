@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class QuestionManager : MonoBehaviour
     public string[] questions;
     //public Text scoreText;
     public int score;
+    private string currentString;
+    public ScoreManager scoreManager;
 
     private int questionsAnswered = 0;
 
@@ -30,6 +33,7 @@ public class QuestionManager : MonoBehaviour
         }
         //score = GlobalScoreScript.Instance.score;
         //setScoreText();
+        scoreManager = FindObjectOfType<ScoreManager>();
 
     }
 
@@ -38,6 +42,7 @@ public class QuestionManager : MonoBehaviour
         if (questions != null)
         {
             Debug.Log("Grabbing question : " + (questionsAnswered));
+            currentString = questions[questionsAnswered];
             return questions[questionsAnswered];
         }
         return null;
@@ -49,6 +54,27 @@ public class QuestionManager : MonoBehaviour
         questionsAnswered++;
         score++;
         setScoreText();
+
+        string currentAnswer;
+        if (choice == 1)
+        {
+            currentAnswer = "Strongly Agree";
+        } else if (choice == 2)
+        {
+            currentAnswer = "Agree";
+        } else if (choice == 3)
+        {
+            currentAnswer = "Neutral";
+        } else if (choice == 4)
+        {
+            currentAnswer = "Disagree";
+        } else
+        {
+            currentAnswer = "Strongly Disagree";
+        }
+
+        writeAnswer(currentString, currentAnswer);
+        scoreManager.incrementScore();
     }
 
     public void setScoreText()
@@ -65,5 +91,15 @@ public class QuestionManager : MonoBehaviour
     public int getScore()
     {
        return score;
+    }
+
+    static void writeAnswer(string question, string answer)
+    {
+        string path = "Assets/answers.txt";
+        string response = question + " : " + answer;
+
+        StreamWriter writer = new StreamWriter(path, true);
+        writer.WriteLine(response);
+        writer.Close();
     }
 }

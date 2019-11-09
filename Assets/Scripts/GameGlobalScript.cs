@@ -8,12 +8,15 @@ public class GameGlobalScript : MonoBehaviour
     public static GameGlobalScript i;
     public int outdoorX, outdoorY;
     public GameObject playerObject;
+    public int score;
+    public TextAsset scoreText;
+
     void Start()
     {
         //Button btn = myButton.GetComponent<Button>();
         //btn.onClick.AddListener(TaskOnClick);
+        score = 0;
     }
-
 
     // Update is called once per frame
     void Update()
@@ -35,5 +38,14 @@ public class GameGlobalScript : MonoBehaviour
     {
         var playerPos = playerObject.transform.position;
         Debug.Log(playerPos);
+    }
+
+    public void incrementScore()
+    {
+        score++;
+    }
+    public int getScore()
+    {
+        return score;
     }
 }
