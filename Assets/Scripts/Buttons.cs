@@ -14,7 +14,7 @@ public class Buttons : MonoBehaviour
     public int rightEdge;
     private Vector2 realShift;
 
-
+        
     public void OnMouseClicked(string location) {
         SceneManager.LoadScene(location, LoadSceneMode.Single);
     }
