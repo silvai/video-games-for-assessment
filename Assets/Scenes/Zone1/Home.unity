@@ -1599,6 +1599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  neededItem: {fileID: 0}
   item: {fileID: 11400000, guid: a6b1576c302fba14e8ca893319689b7e, type: 2}
 --- !u!1 &421293207
 GameObject:
@@ -1723,10 +1724,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Good morning! \r\nYou\u2019ve been sleeping for ages. It\u2019s almost
-    noon!\r\nWhy don\u2019t you run along and see if our neighbors need any help today.\r\nI
-    have a surprise for you if you get a chance to meet everyone.\r\nBe sure to say
-    hi to your sister and her friends before you leave!\r\n"
+  m_Text: "Good morning! \r\nYou\u2019ve been sleeping for ages.\nWhy don\u2019t you
+    run along and see if our neighbors need any help today.\r\nSay hi to your sister
+    and her friends before you leave!\r\n"
 --- !u!222 &452431447
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2108,12 +2108,12 @@ PrefabInstance:
     - target: {fileID: 2666233523557210737, guid: 00dea925529cf704cb2f57862071d796,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.88
+      value: 9.53
       objectReference: {fileID: 0}
     - target: {fileID: 2666233523557210737, guid: 00dea925529cf704cb2f57862071d796,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.83
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 2666233523557210737, guid: 00dea925529cf704cb2f57862071d796,
         type: 3}
@@ -4008,6 +4008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  neededItem: {fileID: 0}
   item: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20, type: 2}
 --- !u!224 &1195941484 stripped
 RectTransform:

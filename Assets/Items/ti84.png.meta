@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 730ab0248abb8b94a88a9174ac2ac5f8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7972980255612717023
+    second: ti84_0
+  - first:
+      213: -4095315679312432776
+    second: ti84_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -70,9 +76,63 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ti84_0
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 210
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f272926cd703a544a80a8107eb39837
+      internalID: 7972980255612717023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ti84_1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 184
+        width: 137
+        height: 119
+      alignment: 9
+      pivot: {x: 0.6884685, y: 0.44780526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b928fee21b7337c4e98a54e81bceea21
+      internalID: -4095315679312432776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
