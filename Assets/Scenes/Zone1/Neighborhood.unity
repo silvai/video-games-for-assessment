@@ -1346,6 +1346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: bc703d4d5f85d7c469e7c87b1e30c929, type: 3}
+  itemRequiredText: {fileID: 0}
+  neededItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -1908,6 +1910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: f216b91f16edc08478f4b327593f8001, type: 3}
+  itemRequiredText: {fileID: 0}
+  neededItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -1973,6 +1977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  neededItem: {fileID: 0}
 --- !u!114 &842027736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,6 +1991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: 5953c2ab0d15edb4eb3076bf066fff0f, type: 3}
+  itemRequiredText: {fileID: 0}
+  neededItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -3113,6 +3120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: dca9ef27762284248a3607147b2d79eb, type: 3}
+  itemRequiredText: {fileID: 0}
+  neededItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -3343,6 +3352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  neededItem: {fileID: 0}
 --- !u!58 &1315558769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3605,6 +3615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  neededItem: {fileID: 0}
 --- !u!58 &1391842114
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3830,6 +3841,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: 5953c2ab0d15edb4eb3076bf066fff0f, type: 3}
+  itemRequiredText: {fileID: 0}
+  neededItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -5139,6 +5152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
+  neededItem: {fileID: 0}
 --- !u!58 &2093104883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5481,6 +5495,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: neededItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
+        type: 2}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: needsItem
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 507309381432239450, guid: b677632b77875274589a517a4843bb5b,
         type: 3}
       propertyPath: endLine
@@ -5496,6 +5521,12 @@ PrefabInstance:
       propertyPath: theText
       value: 
       objectReference: {fileID: 4900000, guid: 4136aaa93555b3b48b65f846f76fd9e4, type: 3}
+    - target: {fileID: 507309381432239450, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: neededItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b677632b77875274589a517a4843bb5b, type: 3}
 --- !u!4 &507309380896103887 stripped

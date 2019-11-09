@@ -17,12 +17,12 @@ public class ShowTextBox: MonoBehaviour
         currText = itemNotTakenText;
     }
     
-    private void OnTriggerEnter2D(Collider2D coll)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         currText.SetActive(true);
     }
 
-    private void OnTriggerExit2D(Collider2D coll)
+    private void OnTriggerExit2D(Collider2D other)
     {
         currText.SetActive(false);
         currText = itemTakenText;

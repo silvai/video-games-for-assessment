@@ -6,6 +6,8 @@ public class ActivateTextAtLine : MonoBehaviour
 {
 
     public TextAsset theText;
+    public TextAsset itemRequiredText;
+    public Item neededItem;
 
     public int startLine;
     public int endLine;
@@ -14,6 +16,7 @@ public class ActivateTextAtLine : MonoBehaviour
 
     public bool requireButtonPress;
     private bool waitForPress;
+    private bool receivedItem;
 
     public bool destroyWhenActivated;
 
@@ -28,6 +31,16 @@ public class ActivateTextAtLine : MonoBehaviour
     {
         if (waitForPress && Input.GetKeyDown(KeyCode.Space))
         {
+            if (neededItem != null && Inventory.instance.items.Contains(neededItem))
+            {
+                Inventory.instance.Remove(neededItem);
+                Debug.Log("Required item removed from inventory");
+            }
+            else if (neededItem != null && !Inventory.instance.items.Contains(neededItem))
+            {
+                Debug.Log("You don't have the required item");
+            }
+
             theTextBox.ReloadScript(theText);
             theTextBox.currentLine = startLine;
             theTextBox.endAtLine = endLine;
