@@ -15,7 +15,6 @@ public class SaveResponses : MonoBehaviour
 
     public void HideResponses()
     {
-        //responseSet.SetActive(false);
         question.SetActive(false);
         thanks.SetActive(true);
     }
@@ -45,42 +44,5 @@ public class SaveResponses : MonoBehaviour
             writer.Close();
         }
     }
-
-    /*
-    public void SaveToCSVD()
-    {
-        using (StreamWriter writer = File.AppendText("Assets/Data/results.rtf"))
-        {
-            writer.WriteLine("Question: " + question.GetComponent<Text>().text + " . . . . " + response.name);
-            writer.Close();
-        }
-    }
-
-    public void SaveToCSVN() 
-    {
-        using (StreamWriter writer = File.AppendText("Assets/Data/results.rtf"))
-        {
-            writer.WriteLine("Question: " + question.GetComponent<Text>().text + " . . . . " + response.name);
-            writer.Close();
-        }
-    }
-
-    public void SaveToCSVA()
-    {
-        using (StreamWriter writer = File.AppendText("Assets/Data/results.rtf"))
-        {
-            writer.WriteLine("Question: " + question.GetComponent<Text>().text + " . . . . " + response.name);
-            writer.Close();
-        }
-    }
-
-    public void SaveToCSVSA()
-    {
-        using (StreamWriter writer = File.AppendText("Assets/Data/results.rtf"))
-        {
-            writer.WriteLine("Question: " + question.GetComponent<Text>().text + " . . . . " + response.name);
-            writer.Close();
-        }
-    }
-    */
+    
 }

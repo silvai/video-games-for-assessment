@@ -9,7 +9,6 @@ public class QuestionManager : MonoBehaviour
 
     public TextAsset questionList;
     public string[] questions;
-    //public Text scoreText;
     public int score;
     private string currentString;
     public ScoreManager scoreManager;
@@ -31,8 +30,6 @@ public class QuestionManager : MonoBehaviour
             questions = (questionList.text.Split('\n'));
             Debug.Log("Number of questions: " + questions.Length);
         }
-        //score = GlobalScoreScript.Instance.score;
-        //setScoreText();
         scoreManager = FindObjectOfType<ScoreManager>();
 
     }
