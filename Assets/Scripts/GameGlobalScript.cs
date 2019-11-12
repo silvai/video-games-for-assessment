@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameGlobalScript : MonoBehaviour
 {
-    public static GameGlobalScript i;
+    public static GameGlobalScript instance;
     public int outdoorX, outdoorY;
     public GameObject playerObject;
     public int score;
@@ -13,22 +13,14 @@ public class GameGlobalScript : MonoBehaviour
 
     void Start()
     {
-        //Button btn = myButton.GetComponent<Button>();
-        //btn.onClick.AddListener(TaskOnClick);
         score = 0;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     void Awake()
     {
-        if (!i)
+        if (!instance)
         {
-            i = this;
+            instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else

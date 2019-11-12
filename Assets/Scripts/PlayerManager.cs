@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
 {
 
     float x, y;
+    public GameObject player;
     #region Singleton
 
     public static PlayerManager instance;
@@ -21,7 +22,6 @@ public class PlayerManager : MonoBehaviour
 
     #endregion
 
-    public GameObject player;
 
     public void KillPlayer()
     {

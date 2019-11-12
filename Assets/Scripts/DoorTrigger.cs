@@ -11,7 +11,6 @@ public class DoorTrigger : MonoBehaviour
     public string nextRoom;
     TriggerSpeech check;
 
-    
     // Start is called before the first frame update
     void Start()
     {
