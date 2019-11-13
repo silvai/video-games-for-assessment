@@ -1348,6 +1348,7 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: bc703d4d5f85d7c469e7c87b1e30c929, type: 3}
   itemRequiredText: {fileID: 0}
   neededItem: {fileID: 0}
+  collectedItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -1912,6 +1913,7 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: f216b91f16edc08478f4b327593f8001, type: 3}
   itemRequiredText: {fileID: 0}
   neededItem: {fileID: 0}
+  collectedItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -1994,6 +1996,7 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: 5953c2ab0d15edb4eb3076bf066fff0f, type: 3}
   itemRequiredText: {fileID: 0}
   neededItem: {fileID: 0}
+  collectedItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -3225,6 +3228,7 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: dca9ef27762284248a3607147b2d79eb, type: 3}
   itemRequiredText: {fileID: 0}
   neededItem: {fileID: 0}
+  collectedItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -4142,6 +4146,7 @@ MonoBehaviour:
   theText: {fileID: 4900000, guid: 5953c2ab0d15edb4eb3076bf066fff0f, type: 3}
   itemRequiredText: {fileID: 0}
   neededItem: {fileID: 0}
+  collectedItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -5892,6 +5897,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: neededItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
+        type: 2}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: needsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: possessedItem
+      value: 
+      objectReference: {fileID: 11400000, guid: a6b1576c302fba14e8ca893319689b7e,
+        type: 2}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 507309381432239450, guid: b677632b77875274589a517a4843bb5b,
         type: 3}
       propertyPath: endLine
@@ -5911,26 +5938,16 @@ PrefabInstance:
         type: 3}
       propertyPath: neededItem
       value: 
-      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
-        type: 2}
-    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
-        type: 3}
-      propertyPath: neededItem
-      value: 
-      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
-        type: 2}
-    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
-        type: 3}
-      propertyPath: needsItem
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
-        type: 3}
-      propertyPath: possessedItem
-      value: 
       objectReference: {fileID: 11400000, guid: a6b1576c302fba14e8ca893319689b7e,
         type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 507309381432239450, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: collectedItem
+      value: 
+      objectReference: {fileID: 11400000, guid: b6e85dc4c5d553b4ca0f4bafceeed8f1,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b677632b77875274589a517a4843bb5b, type: 3}
 --- !u!4 &507309380896103887 stripped
 Transform:

@@ -8,6 +8,7 @@ public class ActivateTextAtLine : MonoBehaviour
     public TextAsset theText;
     public TextAsset itemRequiredText;
     public Item neededItem;
+    public Item collectedItem;
 
     public int startLine;
     public int endLine;
@@ -39,6 +40,10 @@ public class ActivateTextAtLine : MonoBehaviour
             else if (neededItem != null && !Inventory.instance.items.Contains(neededItem))
             {
                 Debug.Log("You don't have the required item");
+            }
+            if (collectedItem != null && !Inventory.instance.items.Contains(collectedItem))
+            {
+                Inventory.instance.Add(collectedItem);
             }
 
             theTextBox.ReloadScript(theText);
