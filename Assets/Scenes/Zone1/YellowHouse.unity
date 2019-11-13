@@ -962,7 +962,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 623305971}
+  phoneBox: {fileID: 0}
   theText: {fileID: 1365367200}
+  phoneText: {fileID: 0}
   textfile: {fileID: 4900000, guid: 5953c2ab0d15edb4eb3076bf066fff0f, type: 3}
   textLines: []
   currentLine: 0
@@ -970,6 +972,7 @@ MonoBehaviour:
   player: {fileID: 65070226}
   isActive: 0
   stopPlayerMovement: 1
+  questionManager: {fileID: 0}
 --- !u!4 &432296240
 Transform:
   m_ObjectHideFlags: 0

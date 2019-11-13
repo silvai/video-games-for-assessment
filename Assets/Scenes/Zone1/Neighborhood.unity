@@ -1978,6 +1978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   neededItem: {fileID: 0}
+  possessedItem: {fileID: 0}
 --- !u!114 &842027736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2205,16 +2206,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.1948
       objectReference: {fileID: 0}
-    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
-        type: 3}
-      propertyPath: nextRoom
-      value: City
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 421274398}
     - target: {fileID: 6548635756046904015, guid: 8a509628083fadb409e80dcdf0de30b2,
         type: 3}
       propertyPath: m_Offset.x
@@ -2235,6 +2226,16 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.7956403
       objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: nextRoom
+      value: City
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 421274398}
     - target: {fileID: 2845734230294848343, guid: 8a509628083fadb409e80dcdf0de30b2,
         type: 3}
       propertyPath: m_audioClip
@@ -3552,6 +3553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   neededItem: {fileID: 0}
+  possessedItem: {fileID: 0}
 --- !u!58 &1315558769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3912,6 +3914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   neededItem: {fileID: 0}
+  possessedItem: {fileID: 0}
 --- !u!58 &1391842114
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5546,6 +5549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   neededItem: {fileID: 0}
+  possessedItem: {fileID: 0}
 --- !u!58 &2093104883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5888,17 +5892,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
-        type: 3}
-      propertyPath: neededItem
-      value: 
-      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
-        type: 2}
-    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
-        type: 3}
-      propertyPath: needsItem
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 507309381432239450, guid: b677632b77875274589a517a4843bb5b,
         type: 3}
       propertyPath: endLine
@@ -5919,6 +5912,23 @@ PrefabInstance:
       propertyPath: neededItem
       value: 
       objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
+        type: 2}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: neededItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
+        type: 2}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: needsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: possessedItem
+      value: 
+      objectReference: {fileID: 11400000, guid: a6b1576c302fba14e8ca893319689b7e,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b677632b77875274589a517a4843bb5b, type: 3}

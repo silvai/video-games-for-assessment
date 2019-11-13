@@ -11,12 +11,13 @@ public class Interactable : MonoBehaviour {
 	public float radius = 3f;                   // How close do we need to be to interact?
     //public Transform interactionTransform;	// The transform from where we interact in case you want to offset it
     public Item neededItem;
+    public Item possessedItem;
 
-        
-	//bool isFocus;	        // Is this interactable currently being focused?
-	//Transform player;		// Reference to the player transform
 
-	bool hasInteracted;	// Have we already interacted with the object?
+    //bool isFocus;	        // Is this interactable currently being focused?
+    //Transform player;		// Reference to the player transform
+
+    bool hasInteracted;	// Have we already interacted with the object?
 
 	public virtual void Interact ()
 	{
