@@ -11,8 +11,11 @@
     
 
 ** Install Guide **
-* Pre-requisites: what is the required configuration of software and hardware that the customer must have before they can begin the installation process? / Build instructions (if needed): if you are providing the raw source code rather than a binary build, how will the customer and users create the required executable application?
-    - In order to play our game you must have access to a computer that can run MacOS or Linux. The build file is available here on github and can be downloaded as a game file to play. We are currently in the process of creating a more user friendly installer that will allow the user to simply click the game icon and play.
+* Pre-requisites: what is the required configuration of software and hardware that the customer must have before they can begin the installation process?
+Build instructions (if needed): if you are providing the raw source code rather than a binary build, how will the customer and users create the required executable application?
+    - In order to play our game you must have access to a computer that can run MacOS or Linux. 
+    - The build file is available here on github and can be downloaded as a game file to play.
+    - We are currently in the process of creating a more user friendly installer that will allow the user to simply click the game icon and play.
 
 * Dependent libraries that must be installed: what third party software must be installed for your software to function?
     - No libraries are necessary. They will all be included within the build file.
