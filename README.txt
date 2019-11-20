@@ -9,8 +9,15 @@
 * Known bugs and defects -- you should also include here any functionality you promised the customer but is missing in the release:
     - Phone UI to answer Hexaco questions does not function as expected in every level/scene. (Explicitly one of the houses)
     
+** Install Guide for Code **
+* Pre-requisites:
+    - Unity is necessary to view our code and troubleshoot in a developer environment.
+    - Download the current github files and open as a new project in Unity
+        OR
+    - Download the Assets folder and import into a pre-existent Unity project to overwrite the current empty Assets folde
 
-** Install Guide **
+
+** Install Guide for Executable Build **
 * Pre-requisites: what is the required configuration of software and hardware that the customer must have before they can begin the installation process?
 Build instructions (if needed): if you are providing the raw source code rather than a binary build, how will the customer and users create the required executable application?
     - In order to play our game you must have access to a computer that can run MacOS or Linux. 
