@@ -19,7 +19,7 @@
 
 ** Install Guide for Executable Build **
 * Pre-requisites: what is the required configuration of software and hardware that the customer must have before they can begin the installation process?
-Build instructions (if needed): if you are providing the raw source code rather than a binary build, how will the customer and users create the required executable application?
+* Build instructions (if needed): if you are providing the raw source code rather than a binary build, how will the customer and users create the required executable application?
     - In order to play our game you must have access to a computer that can run MacOS or Linux. 
     - The build file is available here on github and can be downloaded as a game file to play.
     - We are currently in the process of creating a more user friendly installer that will allow the user to simply click the game icon and play.
@@ -30,5 +30,5 @@ Build instructions (if needed): if you are providing the raw source code rather 
 * Download instructions: how will the customer and users get access to the project?
     - The build file is currently available on github
 
-Run instructions:  what does the user/customer have to do to get the software to execute?
-Troubleshooting:  what are common errors that occur during installation and what is the corrective action?
+* Run instructions:  what does the user/customer have to do to get the software to execute?
+* Troubleshooting:  what are common errors that occur during installation and what is the corrective action?
