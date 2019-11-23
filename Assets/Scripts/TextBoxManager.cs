@@ -32,6 +32,8 @@ public class TextBoxManager : MonoBehaviour
     {
         player = GameObject.Find("player");
         questionManager = FindObjectOfType<QuestionManager>();
+        phoneBox = GameObject.FindGameObjectWithTag("Phone");
+
 
         DisablePhoneBox();
         phoneActive = false;

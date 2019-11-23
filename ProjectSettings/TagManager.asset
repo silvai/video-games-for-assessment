@@ -6,6 +6,7 @@ TagManager:
   tags:
   - QuestionGenerator
   - PickupItem
+  - Phone
   layers:
   - Default
   - TransparentFX

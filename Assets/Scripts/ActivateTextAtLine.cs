@@ -35,11 +35,11 @@ public class ActivateTextAtLine : MonoBehaviour
             if (neededItem != null && Inventory.instance.items.Contains(neededItem))
             {
                 Inventory.instance.Remove(neededItem);
-                Debug.Log("Required item removed from inventory");
+                //Debug.Log("Required item removed from inventory");
             }
             else if (neededItem != null && !Inventory.instance.items.Contains(neededItem))
             {
-                Debug.Log("You don't have the required item");
+                //Debug.Log("You don't have the required item");
             }
             if (collectedItem != null && !Inventory.instance.items.Contains(collectedItem))
             {

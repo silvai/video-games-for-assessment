@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cac90a348c58454695edd4a4be58523, type: 3}
-  m_Name: Glue
+  m_Name: Twister
   m_EditorClassIdentifier: 
-  name: Glue
-  icon: {fileID: -899649328345757867, guid: 32e4cba804c01f94ca0a59a5baa49b1a, type: 3}
+  name: Twister
+  icon: {fileID: 219278572506620304, guid: 1ace116fa4901d24e8a7ec55d795fcc6, type: 3}

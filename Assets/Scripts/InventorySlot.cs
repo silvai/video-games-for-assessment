@@ -13,7 +13,7 @@ public class InventorySlot : MonoBehaviour {
 	// Add item to the slot
 	public void AddItem (Item newItem)
 	{
-        Debug.Log("Adding item");
+        //Debug.Log("Adding item");
 		item = newItem;
 		icon.sprite = item.icon;
 		icon.enabled = true;

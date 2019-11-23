@@ -1720,6 +1720,12 @@ PrefabInstance:
       propertyPath: endLine
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 507309381432239450, guid: b677632b77875274589a517a4843bb5b,
+        type: 3}
+      propertyPath: neededItem
+      value: 
+      objectReference: {fileID: 11400000, guid: b6e85dc4c5d553b4ca0f4bafceeed8f1,
+        type: 2}
     - target: {fileID: 507309381599259584, guid: b677632b77875274589a517a4843bb5b,
         type: 3}
       propertyPath: m_Sprite

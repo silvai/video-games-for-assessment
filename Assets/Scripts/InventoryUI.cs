@@ -33,7 +33,7 @@ public class InventoryUI : MonoBehaviour {
     // This is called using a delegate on the Inventory.
     void UpdateUI ()
 	{
-        Debug.Log("Updating UI");
+        //Debug.Log("Updating UI");
 		// Loop through all the slots
 		for (int i = 0; i < slots.Length; i++)
 		{

@@ -769,6 +769,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhonePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 4728567620668974271, guid: 23640385fa9aba84bb4d1f76371b8ed9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Phone
+      objectReference: {fileID: 0}
     - target: {fileID: 4728567620668974208, guid: 23640385fa9aba84bb4d1f76371b8ed9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1677,6 +1682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   neededItem: {fileID: 0}
+  possessedItem: {fileID: 0}
   item: {fileID: 11400000, guid: a6b1576c302fba14e8ca893319689b7e, type: 2}
 --- !u!1 &421293207
 GameObject:
@@ -4177,6 +4183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   neededItem: {fileID: 0}
+  possessedItem: {fileID: 0}
   item: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20, type: 2}
 --- !u!224 &1195941484 stripped
 RectTransform:
