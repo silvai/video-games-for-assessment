@@ -16,3 +16,36 @@
 3. I rarely hold a grudge, even against people who have badly wronged me. : Agree
 4. I feel reasonably satisfied with myself overall. : Disagree
 5. I would feel afraid if I had to travel in bad weather conditions. : Agree
+1. I would be quite bored by a visit to an art gallery. : Strongly Agree
+2. I plan ahead and organize things, to avoid scrambling at the last minute. : Strongly Agree
+3. I rarely hold a grudge, even against people who have badly wronged me. : Strongly Agree
+4. I feel reasonably satisfied with myself overall. : Neutral
+5. I would feel afraid if I had to travel in bad weather conditions. : Neutral
+6. I wouldn’t use flattery to get a raise or promotion at work, even if I thought it would succeed. : Neutral
+7. I’m interested in learning about the history and politics of other countries. : Disagree
+8. I often push myself very hard when trying to achieve a goal. : Disagree
+9. People sometimes tell me that I am too critical of others. : Disagree
+10. I rarely express my opinions in group meetings. : Disagree
+11. I sometimes can’t help worrying about little things. : Agree
+12. If I knew that I could never get caught, I would be willing to steal a million dollars. : Agree
+13. I would enjoy creating a work of art, such as a novel, a song, or a painting. : Agree
+14. When working on something, I don’t pay much attention to small details. : Agree
+1. I would be quite bored by a visit to an art gallery. : Strongly Agree
+2. I plan ahead and organize things, to avoid scrambling at the last minute. : Strongly Agree
+3. I rarely hold a grudge, even against people who have badly wronged me. : Neutral
+4. I feel reasonably satisfied with myself overall. : Agree
+5. I would feel afraid if I had to travel in bad weather conditions. : Agree
+6. I wouldn’t use flattery to get a raise or promotion at work, even if I thought it would succeed. : Agree
+1. I would be quite bored by a visit to an art gallery. : Neutral
+1. I would be quite bored by a visit to an art gallery. : Agree
+1. I would be quite bored by a visit to an art gallery. : Neutral
+1. I would be quite bored by a visit to an art gallery. : Agree
+2. I plan ahead and organize things, to avoid scrambling at the last minute. : Disagree
+3. I rarely hold a grudge, even against people who have badly wronged me. : Agree
+4. I feel reasonably satisfied with myself overall. : Disagree
+5. I would feel afraid if I had to travel in bad weather conditions. : Disagree
+6. I wouldn’t use flattery to get a raise or promotion at work, even if I thought it would succeed. : Neutral
+7. I’m interested in learning about the history and politics of other countries. : Agree
+8. I often push myself very hard when trying to achieve a goal. : Agree
+9. People sometimes tell me that I am too critical of others. : Agree
+10. I rarely express my opinions in group meetings. : Disagree

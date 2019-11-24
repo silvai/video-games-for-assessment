@@ -85,7 +85,7 @@ public class TextBoxManager : MonoBehaviour
             {
                 EnablePhoneBox();
             }
-            Debug.Log("CHECK");
+            //Debug.Log("CHECK");
             currentLine++;
         }
 
@@ -128,14 +128,14 @@ public class TextBoxManager : MonoBehaviour
         phoneBox.SetActive(true);
         phoneText.text = LoadQuestion();
         phoneActive = true;
-        Debug.Log("Phone active");
+        //Debug.Log("Phone active");
     }
 
     public void DisablePhoneBox()
     {
         phoneBox.SetActive(false);
         phoneActive = false;
-        Debug.Log("Phone not active");
+        //Debug.Log("Phone not active");
     }
 
     public void ReloadScript(TextAsset theText)
@@ -152,13 +152,13 @@ public class TextBoxManager : MonoBehaviour
     public string LoadQuestion()
     {
         string question = questionManager.getNextQuestion();
-        Debug.Log("LoadQuestion : " + question);
+        //Debug.Log("LoadQuestion : " + question);
         return question;
     }
 
     public void AcceptResponse(int choice)
     {
-        Debug.Log("ACCEPT RESPONSE" + choice);
+       // Debug.Log("ACCEPT RESPONSE" + choice);
         questionManager.questionAnswered(choice);
         DisablePhoneBox();
     }

@@ -6,7 +6,10 @@ public class Locked : MonoBehaviour
 {
     public QuestionManager qm;
     public GameObject door;
-    
+    private void Start()
+    {
+        qm = FindObjectOfType<QuestionManager>();
+    }
     // Update is called once per frame
     void Update()
     {

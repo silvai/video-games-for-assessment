@@ -2314,6 +2314,36 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512117, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512117, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: orthographic size
+      value: 8.352929
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dea925529cf704cb2f57862071d796, type: 3}
 --- !u!1 &566338065

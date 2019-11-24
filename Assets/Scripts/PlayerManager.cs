@@ -30,7 +30,7 @@ public class PlayerManager : MonoBehaviour
 
     public void recordPlayerPosition()
     {
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
         x = transform.position.x;
         y = transform.position.y;
     }
