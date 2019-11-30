@@ -467,6 +467,21 @@ PrefabInstance:
       propertyPath: canMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dea925529cf704cb2f57862071d796, type: 3}
 --- !u!1 &418485854 stripped
@@ -830,6 +845,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: nextRoom
+      value: Arcade
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 418485854}
     - target: {fileID: 6548635756046904015, guid: 8a509628083fadb409e80dcdf0de30b2,
         type: 3}
       propertyPath: m_Offset.x
@@ -850,16 +875,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.083493
       objectReference: {fileID: 0}
-    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
-        type: 3}
-      propertyPath: nextRoom
-      value: Arcade
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 418485854}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a509628083fadb409e80dcdf0de30b2, type: 3}
 --- !u!1001 &1154202374
@@ -929,6 +944,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: nextRoom
+      value: IceCream
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 418485854}
     - target: {fileID: 6548635756046904015, guid: 8a509628083fadb409e80dcdf0de30b2,
         type: 3}
       propertyPath: m_Offset.x
@@ -949,16 +974,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.083493
       objectReference: {fileID: 0}
-    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
-        type: 3}
-      propertyPath: nextRoom
-      value: IceCream
-      objectReference: {fileID: 0}
-    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 418485854}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a509628083fadb409e80dcdf0de30b2, type: 3}
 --- !u!1 &1182940558

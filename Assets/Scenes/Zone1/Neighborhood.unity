@@ -5899,7 +5899,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectedItem
       value: 
-      objectReference: {fileID: 11400000, guid: b6e85dc4c5d553b4ca0f4bafceeed8f1,
+      objectReference: {fileID: 11400000, guid: 0cc408dcba9fc314fad2a6d29cadee20,
         type: 2}
     m_RemovedComponents:
     - {fileID: 507309381599259589, guid: b677632b77875274589a517a4843bb5b, type: 3}
@@ -5995,6 +5995,21 @@ PrefabInstance:
     - target: {fileID: 2666233522172512116, guid: 00dea925529cf704cb2f57862071d796,
         type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666233522172512119, guid: 00dea925529cf704cb2f57862071d796,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
