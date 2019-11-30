@@ -4219,7 +4219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9933c797ef1d3a24f9b028c44c43c43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 421274398}
   nextRoom: City
 --- !u!224 &1533395842
 RectTransform:
