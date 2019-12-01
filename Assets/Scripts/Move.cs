@@ -35,7 +35,6 @@ public class Move : MonoBehaviour
 
         //if (!isClicked)
         //{
-
         if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 Vector3 position = this.transform.position;
