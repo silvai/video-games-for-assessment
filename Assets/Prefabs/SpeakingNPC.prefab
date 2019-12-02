@@ -71,6 +71,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: 304c7933997cdd84795aabb62ae12d0d, type: 3}
+  itemRequiredText: {fileID: 0}
+  neededItem: {fileID: 0}
+  collectedItem: {fileID: 0}
   startLine: 0
   endLine: 1
   theTextBox: {fileID: 0}
@@ -86,11 +89,8 @@ GameObject:
   m_Component:
   - component: {fileID: 507309381599259585}
   - component: {fileID: 507309381599259584}
-  - component: {fileID: 507309381599259587}
-  - component: {fileID: 507309381599259586}
-  - component: {fileID: 507309381599259589}
   m_Layer: 0
-  m_Name: Harry
+  m_Name: SpeakingNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,58 +161,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &507309381599259587
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507309381599259588}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.8874347, y: 0.3587503}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 2.43}
-    newSize: {x: 0.81, y: 2.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6211846, y: 1.981184}
-  m_EdgeRadius: 0
---- !u!58 &507309381599259586
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507309381599259588}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00078864605, y: -0.15850149}
-  serializedVersion: 2
-  m_Radius: 1.0399166
---- !u!114 &507309381599259589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507309381599259588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc6ba172d0d6c8f4295ef0ac5a30e694, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
