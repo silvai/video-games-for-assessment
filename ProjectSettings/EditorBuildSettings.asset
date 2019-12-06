@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zone3/Park.unity
     guid: 166472e5bc6365247a55ff5577d40a9c
+  - enabled: 1
+    path: Assets/Scenes/Zone2/Laundromat.unity
+    guid: bfd247a3c9a87ca4f852cb9c9dc9eca6
+  - enabled: 1
+    path: Assets/Scenes/Zone2/Cafe.unity
+    guid: b2d0621204ccd3b4d9f623e34f0e1943
   m_configObjects: {}

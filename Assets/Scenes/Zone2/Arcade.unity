@@ -656,6 +656,11 @@ PrefabInstance:
       propertyPath: nextRoom
       value: City
       objectReference: {fileID: 0}
+    - target: {fileID: 6548635756046904010, guid: 8a509628083fadb409e80dcdf0de30b2,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 956510818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a509628083fadb409e80dcdf0de30b2, type: 3}
 --- !u!1 &892893352
@@ -869,6 +874,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dea925529cf704cb2f57862071d796, type: 3}
+--- !u!1 &956510818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2666233523557210747, guid: 00dea925529cf704cb2f57862071d796,
+    type: 3}
+  m_PrefabInstance: {fileID: 956510817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &968728028
 GameObject:
   m_ObjectHideFlags: 0

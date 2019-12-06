@@ -23,10 +23,14 @@ public class SaveAndRestorePosition : MonoBehaviour
         {
             indoors = false;
             playerPosition.y += 1;
+            playerPosition.x += 1;
+            //playerPosition.y -= 1;
         } else
         {
             indoors = true;
             playerPosition.y -= 1;
+            //playerPosition.x -= 1;
+            //playerPosition.y += 1;
         }
         
         
